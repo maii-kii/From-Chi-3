@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #eaf4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* New Profile Image Styles */
+.profile-img {
+    width: 150px;           /* Adjust size as needed */
+    height: 150px;          /* Must match width for a perfect circle */
+    object-fit: cover;      /* Crops image to fit the circle */
+    margin-bottom: 25px;    /* Space between photo and title */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 15px;
+    color: #2f4f6f;
+}
+
+p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #4f6f8f;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.btn-open {
+    display: inline-block;
+    background-color: #2f4f6f;
+    color: white;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-open:hover {
+    background-color: #3d668f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(47, 79, 111, 0.2);
+}
